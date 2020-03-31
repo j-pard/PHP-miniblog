@@ -26,4 +26,5 @@ I don't use a lot of frameworks because i want to learn vanilla technologies. So
 * Project started monday 30-03-2020 near 4PM
   * Objective of the day: Initialise the project
 * 31-03-2020 
-  * Morning: Creating database + Mock-up
+  * AM: Creating database + Mock-up
+  * PM: Structure started

@@ -51,6 +51,22 @@
             }
 
             /**
+             * Creer un input avec un type à spécifier
+             *
+             * @param string $name Choisir le nom
+             * @return void Ecrit la balise input:text
+             */
+            public function input($name, $type = "text", $value = 0, $visible = true) {
+                  if($visible) {
+                        echo "<label for='" . $name . "'>" . ucfirst($name) . "</label>";
+                        echo "<input type='" . $type . "' name='" . $name . "' value='" . $this->getValue($name) . "'>";
+                  }
+                  else {
+                        echo "<input type='" . $type . "' name='" . $name . "' value='" . $value . "' class='not-displayed'>";
+                  }
+            }
+
+            /**
              * Creer un textarea
              *
              * @param string $name Nom de la zone de texte

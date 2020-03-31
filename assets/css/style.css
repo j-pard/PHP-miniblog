@@ -39,6 +39,7 @@ body main {
 
 body main section.items-container {
   width: 75%;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,7 +55,9 @@ body main section.items-container {
 
 body main section.items-container .items {
   width: 300px;
-  height: 400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   text-align: center;
   border: 1px solid gray;
 }
@@ -72,20 +75,37 @@ body main section.items-container .items footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 15px;
+  padding: 10px 15px;
 }
 
 body main section.items-container .items footer div.likes-cont {
   color: salmon;
+  text-align: left;
+  width: 40%;
 }
 
 body main section.items-container .items footer div.author-cont {
+  text-align: right;
   font-style: italic;
+  width: 60%;
+}
+
+body main section.items-container .items footer form {
+  width: 100%;
+}
+
+body main section.items-container .items footer form input[type='submit'] {
+  padding: 5px 12px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: cyan;
+  color: white;
+  text-transform: uppercase;
 }
 
 body main section.infos-container {
@@ -97,5 +117,9 @@ body main section.infos-container {
 
 body main section.infos-container ul {
   list-style: none;
+}
+
+body .not-displayed {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

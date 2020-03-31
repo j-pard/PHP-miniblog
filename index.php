@@ -2,10 +2,6 @@
       require './ressources/dbid.php';
       require 'classes/Autoloader.php';
       Autoloader::register();
-
-      // DB connexion exemple
-      $db = new Database($dbid_name, $dbid_user, $dbid_pass, $dbid_host);
-      $db->query('SELECT * FROM articles', 'Article');
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +15,26 @@
       <meta name="organization" content="BeCode">
       <script src="https://kit.fontawesome.com/126bbe9047.js" crossorigin="anonymous"></script>
       
-      <title>MTB - My Tech Blog</title>
+      <title>MTR - My Tech Ressources</title>
 </head>
 <body>
-      <h1>My <span>Tech</span> Blog</h1>
+      <header>
+      
+      </header>
+
+      <main>
+            <section class='infos-container'>
+                  <?php
+                        include 'views/infos_main.php';
+                  ?>
+            </section>
+            
+            <section class="items-container">
+                  <?php
+                        include 'views/articles.php';
+                  ?>
+            </section>
+      </main>
       
       <script src="./assets/js/script.js"></script>
 </body>

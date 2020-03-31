@@ -1,7 +1,7 @@
 # PHP-miniblog
 
 ## What is is ?
-Miniblog is a web application used for read articles about technologies. 
+Miniblog is a web plateform used for stock and echange ideas, models and a lot other thngs about technologies and 3D printing. 
 
 ## Why ?
 I am in formation by BeCode and currently, i am learning OOP and MVC in PHP.  
@@ -16,7 +16,7 @@ The access are given in 3 levels :
 
 ## Technologies ?
 The plan is to use OOP and MVC architecture at maximum.  
-I don't use any framework because i want to learn vanilla technologies.
+I don't use a lot of frameworks because i want to learn vanilla technologies. Some libs are allowed.
 * PHP
 * HTML5
 * SASS
@@ -24,4 +24,6 @@ I don't use any framework because i want to learn vanilla technologies.
 
 ## Timeline ?
 * Project started monday 30-03-2020 near 4PM
-  * Objective of the day: Initialise the project and make UML
+  * Objective of the day: Initialise the project
+* 31-03-2020 
+  * Morning: Creating database + Mock-up

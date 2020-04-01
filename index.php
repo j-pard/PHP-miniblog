@@ -2,6 +2,8 @@
       require './ressources/dbid.php';
       require 'classes/Autoloader.php';
       Autoloader::register();
+
+      $db = new Database($dbid_name, $dbid_user, $dbid_pass, $dbid_host);
 ?>
 
 <!DOCTYPE html>

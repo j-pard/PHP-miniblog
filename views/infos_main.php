@@ -1,13 +1,11 @@
 <?php
 
       echo "<h1>My <span>Tech</span> Ressources</h1>" .
-            "<p>Ceci est une introduction de qualité</p>" . 
-            "<ul>" . 
-                        "<li>Stat 1</li>" .
-                        "<li>Stat 2</li>" .
-                        "<li>Stat 3</li>" . 
-            "</ul>" .
-            "<div>" . 
+            "<p>Ceci est une introduction de qualité</p>";
+            
+            include 'stats.php';
+
+      echo "<div>" . 
                   "<h2>Nouveautés</h2>" . 
                   "<ul>" . 
                         "<li>News 1</li>" .

@@ -25,10 +25,16 @@
                   return $this->pdo;
             }
 
-            public function query($sql, $class_name) {
+            public function query($sql, $class_name = "") {
                   $request = $this->getPDO()->query($sql);
-                  $datas = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
-                  return $datas;
+                  if($class_name === "") {
+                        $datas = $request->fetch();
+                        return $datas[0];
+                  }
+                  else {
+                        $datas = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
+                        return $datas;
+                  }
 
             }
 

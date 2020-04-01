@@ -25,6 +25,10 @@ h3 {
   margin: 10px auto;
 }
 
+h1, h2 {
+  color: #00a8ff;
+}
+
 body main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +63,8 @@ body main section.items-container .items {
   height: -moz-max-content;
   height: max-content;
   text-align: center;
-  border: 1px solid gray;
+  border: 2px solid #00a8ff;
+  border-radius: 20px;
 }
 
 body main section.items-container .items img {
@@ -103,13 +108,14 @@ body main section.items-container .items footer div i {
 
 body main section.items-container .items footer form {
   width: 100%;
+  margin-top: 10px;
 }
 
 body main section.items-container .items footer form input[type='submit'] {
   padding: 5px 12px;
   font-size: 20px;
   font-weight: bold;
-  background-color: cyan;
+  background-color: #00a8ff;
   color: white;
   text-transform: uppercase;
 }
@@ -117,12 +123,16 @@ body main section.items-container .items footer form input[type='submit'] {
 body main section.infos-container {
   width: 25%;
   height: 100vh;
-  border-right: 5px solid cyan;
+  border-right: 5px solid #00a8ff;
   text-align: center;
 }
 
 body main section.infos-container ul {
   list-style: none;
+}
+
+body main section.infos-container ul.stats-list {
+  margin-top: 30px;
 }
 
 body .not-displayed {

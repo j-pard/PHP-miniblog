@@ -6,6 +6,6 @@
       echo "<ul class='stats-list'>" . 
                   "<li>Modèles disponibles: " . $total_items . "</li>" .
                   "<li>Utilisateurs: " . $total_users . "</li>" .
-                  "<li>Nombre de Likes: " . $total_likes . "</li>" . 
+                  "<li>Total de Likes: " . $total_likes . "</li>" . 
             "</ul>";
 ?>

@@ -27,7 +27,8 @@ body {
                         height: max-content;
                         text-align: center;
 
-                        border: 1px solid gray;
+                        border: 2px solid $secondary;
+                        border-radius: 20px;
 
                         img {
                               height: 300px;
@@ -42,7 +43,7 @@ body {
                               padding: 10px 15px;
 
                               div.likes-cont {
-                                    color: salmon;
+                                    color: $love;
                                     font-weight: bold;
                                     text-align: left;
                                     width: 40%;
@@ -63,12 +64,13 @@ body {
 
                               form {
                                     width: 100%;
+                                    margin-top: 10px;
 
                                     input[type='submit'] {
                                           padding: 5px 12px;
                                           font-size: 20px;
                                           font-weight: bold;
-                                          background-color: cyan;
+                                          background-color: $secondary;
                                           color: white;
                                           text-transform: uppercase;
                                     }
@@ -80,11 +82,15 @@ body {
             section.infos-container {
                   width: 25%;
                   height: 100vh;
-                  border-right: 5px solid cyan;
+                  border-right: 5px solid $secondary;
 
                   text-align: center;
                   ul {
                         list-style: none;
+                  }
+
+                  ul.stats-list {
+                        margin-top: 30px;
                   }
             }
       }

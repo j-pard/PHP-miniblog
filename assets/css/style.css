@@ -2,6 +2,8 @@
   padding: 0;
   margin: 0;
   outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -69,6 +71,7 @@ body main section.items-container .items {
 
 body main section.items-container .items img {
   height: 300px;
+  max-width: 100%;
   width: auto;
 }
 
@@ -123,8 +126,20 @@ body main section.items-container .items footer form input[type='submit'] {
 body main section.infos-container {
   width: 25%;
   height: 100vh;
+  max-height: 100vh;
   border-right: 5px solid #00a8ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
+  padding: 20px 10px 50px 10px;
 }
 
 body main section.infos-container ul {
@@ -133,6 +148,46 @@ body main section.infos-container ul {
 
 body main section.infos-container ul.stats-list {
   margin-top: 30px;
+}
+
+body .socials-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+body .socials-list i {
+  font-size: 40px;
+  margin: 0 5px;
+}
+
+body .facebook {
+  color: #3b5998;
+}
+
+body .twitter {
+  color: #00acee;
+}
+
+body .linkedin {
+  color: #0e76a8;
+}
+
+body .github {
+  color: #333;
+}
+
+body .gmail {
+  color: #c71610;
 }
 
 body .not-displayed {

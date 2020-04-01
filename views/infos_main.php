@@ -1,27 +1,26 @@
 <?php
 
-      echo "<h1>My <span>Tech</span> Ressources</h1>" .
-            "<p>Ceci est une introduction de qualité</p>";
+      echo  "<h1>My <span>Tech</span> Ressources</h1>" .
+            "<p>
+                  [MTR] est une plateforme web créée à but éducatif et d'apprentissage en programmation côté serveur, 
+                  en PHP orienté objet sous une architecture MVC.
+                  
+                  Ce projet est réalisé dans le cadre de la formation BeCode.
+            </p>";
             
-            include 'stats.php';
+            include 'sub_views/stats.php';
 
-      echo "<div>" . 
-                  "<h2>Nouveautés</h2>" . 
-                  "<ul>" . 
-                        "<li>News 1</li>" .
-                        "<li>News 2</li>" .
-                        "<li>News 3</li>" . 
-                  "</ul>" . 
-            "</div>" . 
+      echo  "<div>" . 
+                  "<h2>Nouveautés</h2>";
+
+                  include 'sub_views/news.php';
+                  
+      echo  "</div>" . 
             "<div>" . 
-                  "<h2>Contactez-nous</h2>" . 
-                  "<ul>" . 
-                        "<li>Contact 1</li>" .
-                        "<li>Contact 2</li>" .
-                        "<li>Contact 3</li>" . 
-                        "<li>Contact 4</li>" .
-                        "<li>Contact 5</li>" .
-                  "</ul>" .
-            "<div>";                  
+                  "<h2>Contactez-nous</h2>"; 
+                  
+                  include 'sub_views/socials.php';
+
+      echo  "<div>";                  
 
 ?>

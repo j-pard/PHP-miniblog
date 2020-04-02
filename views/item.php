@@ -25,7 +25,7 @@
       
       </header>
 
-      <main>
+      <main class="item-main">
             <?php
                   if(isset($_GET['item-id'])) {
                         $id = $_GET['item-id'];

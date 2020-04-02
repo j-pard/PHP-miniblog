@@ -40,23 +40,13 @@ body {
                               padding: 10px 15px;
 
                               div.likes-cont {
-                                    color: $love;
-                                    font-weight: bold;
-                                    text-align: left;
                                     width: 40%;
+                                    text-align: left;
                               }
 
                               div.author-cont {
-                                    text-align: right;
-                                    font-style: italic;
-                                    color: gray;
                                     width: 60%;
-                              }
-
-                              div {
-                                    i {
-                                          margin-right: 5px;
-                                    }
+                                    text-align: right;
                               }
 
                               form {
@@ -64,12 +54,7 @@ body {
                                     margin-top: 10px;
 
                                     input[type='submit'] {
-                                          padding: 5px 12px;
-                                          font-size: 20px;
-                                          font-weight: bold;
                                           background-color: $secondary;
-                                          color: white;
-                                          text-transform: uppercase;
                                     }
                               }
                         }
@@ -100,7 +85,83 @@ body {
             }
       }
 
-      // GENERAL SETUP
+
+
+      main.item-main {
+            .flex-row {
+                  display: flex;
+                  flex-direction: row;
+            }
+      
+            .item-left {
+                  div.carousel {
+                        div.img-cont-left {
+                              img {
+                                    width: 400px;
+                                    height: auto;
+                              }
+                        }
+      
+                        div.img-cont-right {
+                              display: flex;
+                              flex-direction: column;
+      
+                              img {
+                                    width: 190px;
+                                    height: auto;
+                                    margin: 5px 10px;
+                              }
+                        }
+                  }
+      
+                  div.item-more {
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 10px 80px;
+                        height: max-content;
+                        width: 100%;
+      
+                        .likes-cont {
+                              font-size: 28px;
+                        }
+                        input[type='submit'] {
+                              background-color: $love;
+                        }
+                  }
+      
+                  footer {
+                        justify-content: space-between;
+                        padding: 10px 80px;
+                  }
+            }
+      }
+
+      input[type='submit'] {
+            padding: 5px 12px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+      }
+
+
+      // CONST
+
+      .likes-cont {
+            color: $love;
+            font-weight: bold;
+      }
+
+      .author-cont {
+            font-style: italic;
+            color: gray;
+      }
+
+      .likes-cont, .author-cont {
+            i {
+                  margin-right: 5px;
+            }
+      }
 
       .socials-list {
             display: flex;

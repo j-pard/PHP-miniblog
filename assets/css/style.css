@@ -92,21 +92,13 @@ body main section.items-container .items footer {
 }
 
 body main section.items-container .items footer div.likes-cont {
-  color: salmon;
-  font-weight: bold;
-  text-align: left;
   width: 40%;
+  text-align: left;
 }
 
 body main section.items-container .items footer div.author-cont {
-  text-align: right;
-  font-style: italic;
-  color: gray;
   width: 60%;
-}
-
-body main section.items-container .items footer div i {
-  margin-right: 5px;
+  text-align: right;
 }
 
 body main section.items-container .items footer form {
@@ -115,12 +107,7 @@ body main section.items-container .items footer form {
 }
 
 body main section.items-container .items footer form input[type='submit'] {
-  padding: 5px 12px;
-  font-size: 20px;
-  font-weight: bold;
   background-color: #00a8ff;
-  color: white;
-  text-transform: uppercase;
 }
 
 body main section.infos-container {
@@ -148,6 +135,88 @@ body main section.infos-container ul {
 
 body main section.infos-container ul.stats-list {
   margin-top: 30px;
+}
+
+body main.item-main .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body main.item-main .item-left div.carousel div.img-cont-left img {
+  width: 400px;
+  height: auto;
+}
+
+body main.item-main .item-left div.carousel div.img-cont-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main.item-main .item-left div.carousel div.img-cont-right img {
+  width: 190px;
+  height: auto;
+  margin: 5px 10px;
+}
+
+body main.item-main .item-left div.item-more {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 80px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+
+body main.item-main .item-left div.item-more .likes-cont {
+  font-size: 28px;
+}
+
+body main.item-main .item-left div.item-more input[type='submit'] {
+  background-color: salmon;
+}
+
+body main.item-main .item-left footer {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 80px;
+}
+
+body input[type='submit'] {
+  padding: 5px 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
+
+body .likes-cont {
+  color: salmon;
+  font-weight: bold;
+}
+
+body .author-cont {
+  font-style: italic;
+  color: gray;
+}
+
+body .likes-cont i, body .author-cont i {
+  margin-right: 5px;
 }
 
 body .socials-list {

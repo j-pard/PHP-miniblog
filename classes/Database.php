@@ -38,10 +38,17 @@
 
             }
 
-            public function prepare($sql, $values, $class_name) {
+            public function prepare($sql, $values, $class_name = "") {
                   $request = $this->getPDO->prepare($sql);
                   $request->execute($values);
-                  $datas = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
+                  if($class_name === "") {
+                        $datas = $request->fetch();
+                        return $datas[0];
+                  }
+                  else {
+                        $datas = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
+                        return $datas;
+                  }
             }
       }
 

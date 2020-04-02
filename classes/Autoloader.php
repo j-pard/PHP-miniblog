@@ -7,8 +7,9 @@
             }
 
             static function autoload($class_name) {
-                  require 'classes/' . $class_name . '.php';
+                        require dirname(__DIR__) . '/' . 'classes/' . $class_name . '.php';                  
             }
+
       }
 
 ?>

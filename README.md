@@ -28,3 +28,8 @@ I don't use a lot of frameworks because i want to learn vanilla technologies. So
 * 31-03-2020 
   * AM: Creating database + Mock-up
   * PM: Structure started
+* 01-04-2020
+  * DB queries, classes & infos
+* 02-04-2020
+  * Item generation and view
+  * Autoloader relative path

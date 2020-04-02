@@ -11,12 +11,16 @@
                                     "<div class='author-cont'><i class='fas fa-pen-fancy'></i>" . ucfirst($this->author) . "</div>";
 
                                     $form = new Form;
-                                    $form->create("controllers/item.php", "GET");
+                                    $form->create("views/item.php", "GET");
                                     $form->input("item-id", "number", $this->id,false);
                                     $form->submit("voir");
                                     $form->end();
                   echo        "</footer>" .
                         "</article>";
+            }
+
+            public function create_item($ID) {
+                  echo "<h2>Ceci est l'iem numéro " . $ID;
             }
 
       }

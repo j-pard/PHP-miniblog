@@ -19,10 +19,6 @@
                         "</article>";
             }
 
-            public function create_item($ID) {
-                  echo "<h2>Ceci est l'iem numéro " . $ID;
-            }
-
       }
 
 ?>

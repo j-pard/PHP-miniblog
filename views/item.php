@@ -9,7 +9,14 @@
       if(isset($_GET['item-id'])) {
             $id = $_GET['item-id'];
 
-            echo "Item numéro " . $id;
+            $sql = ('SELECT * FROM articles WHERE id = ?');
+            $values = array($id);
+
+            $item = $db->prepareItem($sql, $values, 'Item');
+            
+            $item->create();
+            
+
       }
       else {
             echo "Wrong way";

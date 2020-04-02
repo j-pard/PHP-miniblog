@@ -25,30 +25,24 @@
                   return $this->pdo;
             }
 
-            public function query($sql, $class_name = "") {
+            public function query($sql, $class_name = "", $multiple = false) {
                   $request = $this->getPDO()->query($sql);
-                  if($class_name === "") {
-                        $datas = $request->fetch();
-                        return $datas[0];
+                  if(!$multiple) {
+                        $data = $request->fetch();
+                        return $data[0];
                   }
                   else {
-                        $datas = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
-                        return $datas;
+                        $data = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
+                        return $data;
                   }
-
             }
 
-            public function prepare($sql, $values, $class_name = "") {
-                  $request = $this->getPDO->prepare($sql);
+            public function prepareItem($sql, $values, $class_name = "") {
+                  $request = $this->getPDO()->prepare($sql);
                   $request->execute($values);
-                  if($class_name === "") {
-                        $datas = $request->fetch();
-                        return $datas[0];
-                  }
-                  else {
-                        $datas = $request->fetchAll(PDO::FETCH_CLASS, $class_name);
-                        return $datas;
-                  }
+                  $request->setFetchMode(PDO::FETCH_CLASS, $class_name);
+                  $data = $request->fetch();
+                  return $data;
             }
       }
 
